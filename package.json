@@ -1,12 +1,20 @@
 {
-  "name": "make-a-task-management-appdesfwqe3e-a096nm",
+  "name": "boilerplate",
   "version": "1.0.0",
-  "description": "Generated project for make-a-task-management-appdesfwqe3e-a096nm",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "concurrently \"cd vitereact && npm i --legacy-peer-deps && npm run dev\" \"cd backend && npm i && npm run start\""
   },
-  "engines": {
-    "node": ">=14"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.7.8"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
   }
 }
